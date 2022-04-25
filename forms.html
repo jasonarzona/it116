@@ -55,7 +55,7 @@
 
     <section>
         <h1>Radio Buttons and Checkboxes</h1>
-            <form action="birds">
+            <form action="/birds">
                 <label for="agree">I agree to everything</label>
                 <input type="checkbox" name="agree_tos" id="agree">
 
@@ -70,16 +70,64 @@
                     <label for="s">Large</label>
                     <input type="radio" name="size" id="l" value="l">
                 </p>
+                
+                    <!-- below is a dropdown box -->
+                <p>
+                    <!-- connect label to xxxxxxxxxxx -->
+                    <label for="favcolor">What is your favorite color?</label>
+                    <select name="favorite" id="favcolor">
+                        <!-- each option needs a value -->
+                        <option value="red">Red</option>
+
+                        <option value="green">Green</option>
+
+                        <option value="blue">Blue</option>
+                    </select>
+                </p>
+                
+                    <!-- below is xxxxxxx -->
+                <p>
+                    <!-- Scroll bar -->
+                    <label for="scroll">Jason's Scrollbar</label>
+                    <input type="range" id="scroll" min="0" max="10" name="scrollbar">
+                </p>
+
+                    <!-- below is a text area box -->
+                    <!-- p is a text area? -->
+                    <!-- for is also id? -->
+                <p>
+                    <label for="requests">Type into this box</label>
+                    <textarea id="requests" name="reqs" rows="15" cols="15" placeholder="Type something here!"></textarea>
+
+                </p>
+
                 <button>Submit</button>
-
             </form>
+    </section>
+
+    <hr>
+    <!-- xxxxxxxxxx -->
+    <section>
+        <h2>Form Validations</h2>
+        <form action="/bananas">
+            <!-- xxxxxxxxxx -->
+            <label for="required1"></label>
+            <input type="text" name="funny" id="required1" required>
+
+            <!-- xxxxxxxxxx -->
+            <label for="length"></label>
+            <input type="text" name="lengthy" id="length" minlength="5" maxlength="10">
+
+            <p>
+
+                <input type="email" required>
+                
 
 
 
-
-
-
-
+            </p>
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
 </body>
