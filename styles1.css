@@ -1,0 +1,14 @@
+/* Use a separate file for styling  */
+
+h2{
+    color:rgb(11, 161, 46);
+}
+
+button{
+    color:pink;
+    background-color:green;
+}
+
+p{
+    color:orange;
+}
