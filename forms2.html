@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order</title>
+</head>
+<body>
+    <section>
+        <h1>Please fill out the form below</h1>
+            <form action="/order">
+                <p>
+                    <label for="firstname">First Name:</label>
+                    <input id="firstname" type="text" placeholder="First Name" name="firstname">
+                </p>
+
+                <p>
+                    <label for="lastname">Last Name:</label>
+                    <input id="lastname" type="text" placeholder="Last Name" name="lastname">
+                </p>
+
+                <p>
+                    <label for="foodorder">Which food would you like to eat?</label>
+                        <select name="food" id="foodorder">
+                            <option value="chicken">Chicken</option>
+
+                            <option value="beef">Beef</option>
+
+                            <option value="fish">Fish</option>
+                        </select>
+                </p>
+
+                <p>
+                    <label for="allergies">Do you have any allergies?</label>
+                    <textarea id="allergies" name="foodals" rows="5" cols="10" placeholder="Got allergies?" minlength="0" maxlength="500"></textarea>
+
+                </p>
+                <button>Send</button>
+            </form>
+    </section>
+</body>
+</html>
