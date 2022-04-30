@@ -7,42 +7,44 @@
     <title>Forms</title>
 </head>
 
-<!-- xxxxxxxxx -->
+<!-- This is where the body starts -->
 <body>
     <section>
         <h1>Username and Password</h1>
             <form action="/tacos">
-                <!-- xxxxxxxxxx -->
+                <!-- below is the code to input a name -->
                 <p>
                     <label for="username">Enter a Name:</label>
                     <input id="username" type="text" placeholder="Jason" name="username">
                 </p>
-                <!-- xxxxxxxxxxx -->
+                <!-- below is the code to unput a password -->
                 <p>
                     <label for="password">Enter a Password:</label>
                     <input id="password" type="password" placeholder="Password" name="password">
                 </p>
 
-
+                <!-- below is the code for a button -->
                 <!-- button has to go before the closing form tag -->
                 <button>Submit Button</button>
             </form>
     </section>
     <!-- hr is to add a line across the page. idk how to explain that lol -->
     <hr>
+    <!-- this is the beginning of a new section or "group" -->
     <section>
+        <!-- below is the code for a header -->
         <h1>Query Strings</h1>
-            <!--  -->
+            <!-- below is the code for an action. kind of like a search bar. this one will take you to reddit-->
             <form action="https://www.reddit.com/search/">
                 <input type="text" name="q">
                 <button>Submit Reddit</button>
             </form>
-            <!--  -->
+            <!-- this code below  is for an action. this one acts as a search bar for youtube -->
             <form action="https://www.youtube.com/results?search_query=">
                 <input type="text" name="q">
                 <button>Submit Youtube</button>
             </form>
-            <!--  -->
+            <!-- this code below  is for an action. this one acts as a search bar for google -->
             <form action="https://www.google.com/search?q=">
                 <input type="text" name="q">
                 <button>Submit Google</button>
@@ -52,13 +54,15 @@
 
     </section>
     <hr>
-
+    <!-- below is another new section -->
     <section>
         <h1>Radio Buttons and Checkboxes</h1>
             <form action="/birds">
+                <!-- this code below is for a checkbox -->
                 <label for="agree">I agree to everything</label>
                 <input type="checkbox" name="agree_tos" id="agree">
 
+                <!-- below is the code for a radio button -->
                 <p>
                     <!-- value can be anything i want but cant all be the same -->
                     <label for="s">Small</label>
@@ -73,7 +77,6 @@
                 
                     <!-- below is a dropdown box -->
                 <p>
-                    <!-- connect label to xxxxxxxxxxx -->
                     <label for="favcolor">What is your favorite color?</label>
                     <select name="favorite" id="favcolor">
                         <!-- each option needs a value -->
@@ -85,7 +88,7 @@
                     </select>
                 </p>
                 
-                    <!-- below is xxxxxxx -->
+                    <!-- below is the code for a scrollbar or slding bar in my terms -->
                 <p>
                     <!-- Scroll bar -->
                     <label for="scroll">Jason's Scrollbar</label>
@@ -106,15 +109,15 @@
     </section>
 
     <hr>
-    <!-- xxxxxxxxxx -->
+    <!-- below is the code for form validations -->
     <section>
         <h2>Form Validations</h2>
         <form action="/bananas">
-            <!-- xxxxxxxxxx -->
+            <!-- below is the code for an input box  -->
             <label for="required1"></label>
             <input type="text" name="funny" id="required1" required>
 
-            <!-- xxxxxxxxxx -->
+            <!-- this code below sets the minimum and max length for the second input box -->
             <label for="length"></label>
             <input type="text" name="lengthy" id="length" minlength="5" maxlength="10">
 
