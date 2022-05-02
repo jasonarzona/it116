@@ -1,0 +1,46 @@
+/* "*" selects or affects everything */
+/* 
+*   {
+    color:red;
+    background-color: black;
+} 
+*/
+
+
+/* element selectors */
+/* this code below affects everything in the body */
+body{
+    color: red;
+    background-color: black;
+}
+
+/* this code only affects things with the "button" element */
+button{
+    font-size: 30px;
+}
+
+/* this code only affects things in the h1 and h2 tags */
+h1, h2{
+    color: red;
+}
+
+/* id selector */
+/* # lets you choose specific id's */
+#signup{
+    background-color:purple;
+    color: red;
+}
+
+/* class selector */
+/* . lets you choose specific classes */
+/* had to make a class using span tag in the html file first tho */
+.band{
+    color:blueviolet;
+}
+
+/* descendant selector??? */
+/* i guess post makes it the parent then everything below is the child? ex. h2, button, span tags */
+/* this code means every anchor tag under post */
+.post a{
+    color: blueviolet;
+}
