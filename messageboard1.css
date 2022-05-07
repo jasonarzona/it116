@@ -44,3 +44,49 @@ h1, h2{
 .post a{
     color: blueviolet;
 }
+
+/* descendant selectors or combinator? */
+/* this is all the anchor tags in the footer */
+/* p > a is all the anchor tags in the paragragh for example */
+footer > a{
+    color: blueviolet;
+}
+
+/* attribute selectors */
+/* type is the attribute */
+input[type="password"]{
+    color: blueviolet;
+}
+
+input[type="text"]{
+    color: red;
+}
+
+/* looking for all anchor tags with href keyword */
+/* [*=] says look for these specific characters */
+a[href*="google"]{
+    color: darkorange;
+}
+
+/* pseudo classes */
+/* gives it like a special action?? */
+/* like hover takes effect when you hover over something */
+button:hover{
+    background-color: black;
+    color: blueviolet;
+}
+
+/* nested pseudo-classes */
+.post button:active{
+    background-color: red;
+}
+
+/* pseudo-elements */
+/* specific parts??? */
+h2::first-letter{
+    font-size: 50px;
+}
+/* xxxxxxxxx */
+p::first-line{
+    color: blue;
+}

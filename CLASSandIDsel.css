@@ -1,0 +1,27 @@
+.crimson{
+    color: crimson;
+}
+
+.greenish{
+    color: green;
+}
+
+.yellowish{
+    color: rgb(206, 206, 36);
+}
+
+.red{
+    color: red;
+}
+
+.burntorange{
+    color: rgb(255, 123, 0);
+}
+
+#greenbutt{
+    background-color: green;
+}
+
+#redbutt{
+    background-color: red;
+}
