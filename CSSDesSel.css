@@ -18,6 +18,7 @@ a[href*="uog"]{
     background-color: green;
     color: white;
 }
+
 a[href*="karasuno"]{
     background-color: black;
     color: orange;
