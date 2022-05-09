@@ -3,6 +3,15 @@ header > a{
     color: green;
 }
 
+/* This block of code below is what you asked for in the 
+assignment page but I made the schools different colors 
+because the schools colors are different */
+
+/* a[id*="schools"]{
+    background: green;
+    color: white;
+} */
+
 a[href*="uog"]{
     background-color: green;
     color: white;
@@ -12,7 +21,3 @@ a[href*="karasuno"]{
     color: orange;
 }
 
-/* a[id*="schools"]{
-    background: green;
-    color: white;
-} */
