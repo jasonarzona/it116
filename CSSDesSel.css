@@ -1,0 +1,18 @@
+header > a{
+    font-size: 30px;
+    color: green;
+}
+
+a[href*="uog"]{
+    background-color: green;
+    color: white;
+}
+a[href*="karasuno"]{
+    background-color: black;
+    color: orange;
+}
+
+/* a[id*="schools"]{
+    background: green;
+    color: white;
+} */
