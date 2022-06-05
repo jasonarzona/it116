@@ -92,50 +92,57 @@
 //     console.log(i);
 // }
 
-//[this bracket creates an array btw]
-//lets us call an array????
-const deezNuts = ['Snacky', 'Scary', 'Lily', 'Itty','Bitty','Titty', 'Committee'];
+// //[this bracket creates an array btw]
+// //lets us call an array????
+// // const makes it so that deezNuts cannot be reassigned. It will always be 'Snacky', 'Scary', 'Lily', 'Itty','Bitty','Titty', 'Committee'
+// const deezNuts = ['Snacky', 'Scary', 'Lily', 'Itty','Bitty','Titty', 'Committee'];
 
-for (let i = 0; i < deezNuts.length; i ++){
-    console.log(i,deezNuts[i]);
-}
+// //this block of code will show the contents of deezNuts and their index
+// for (let i = 0; i < deezNuts.length; i ++){
+//     console.log(i,deezNuts[i]);
+// }
 
-//lets us use a for loop to edit all the items automatically
-for (var i =0; i < items.length; i ++){
-    items[i].style.backgroundColor = 'black';
-    items[i].style.color = 'white';
-    items[i].textContent = 'Changing the list items';
-}
+// //lets us use a for loop to edit all the items automatically at the same time
+// for (var i =0; i < items.length; i ++){
+//     items[i].style.backgroundColor = 'black';
+//     items[i].style.color = 'white';
+//     items[i].textContent = 'Changing the list items';
+// }
 
 
 /////////////////////////////////////////////
 ///// GetElementsByTagName
 
-//lets us edit a code using index and variables
-var li = document.getElementsByTagName('li');
+// //lets us edit a code using index and variables
+// var li = document.getElementsByTagName('li');
 
-console.log(li);
-console.log(li[1]);
+// //shows the contents of li in the console
+// console.log(li);
 
-li[1].textContent = "Good Morning, Starshine";
-li[1].style.fontWeight = 'bold';
-li[1].style.backgroundColor = 'green'
-li[1].style.color = 'white'
+// //shows the contents of the second li item
+// console.log(li[1]);
 
-for (var i = 0; i < li.length; i++) {
-    li[i].style.backgroundColor = 'lightgrey'
-    li[i].textContent = "The world says, Hello!"
-}
+// //lets us edit the contents in the second li item
+// li[1].textContent = "Good Morning, Starshine";
+// li[1].style.fontWeight = 'bold';
+// li[1].style.backgroundColor = 'green'
+// li[1].style.color = 'white'
 
-////////////////////////////////////////////////////
-//////////Query Selector:
+// //lets us edit everything with the li element at the same time. similar to what we did above
+// for (var i = 0; i < li.length; i++) {
+//     li[i].style.backgroundColor = 'lightgrey'
+//     li[i].textContent = "The world says, Hello!"
+// }
 
-//created a variable for main-header then made a border
-let header = document.querySelector('#main-header');
-header.style.borderBottom = 'solid 4px hotpink'
-header.style.border = 'solid 4px hotpink'
+// ////////////////////////////////////////////////////
+// //////////Query Selector:
+
+// //created a variable for main-header then made a border
+// let header = document.querySelector('#main-header');
+// header.style.borderBottom = 'solid 4px hotpink'
+// header.style.border = 'solid 4px hotpink'
 
 
-//lets us go into the dom to change elements
-let input = document.querySelector('input');
-input.value = "I just changed my underwear in this input box"
+// //lets us go into the dom to change elements
+// let input = document.querySelector('input');
+// input.value = "I just changed my underwear in this input box"
