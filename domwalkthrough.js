@@ -166,9 +166,21 @@
 //////////   querySelectorAll
 
 //makes variable that shows us all elements with title class
+//makes a list of everything with title in it
 var titles = document.querySelectorAll('.title');
 console.log(titles);
 
 //used the variable to change the string in the h2 header that used the title class
-titles[0].textContent = "hello";
+titles[0].textContent = "By order of the Peaky Fookin' Blinders";
 
+//made variables that will let us call on either odd or even numbered items in the list
+var odd = document.querySelectorAll('li:nth-child(odd)');
+var even =document.querySelectorAll('li:nth-child(even)');
+
+//makes for loop to go through every item in the index list, either the odd or even numbers, and then we edited the style
+for  (var i = 0; i < odd.length; i++){
+    odd[i].style.backgroundColor = 'black';
+    odd[i].style.color = 'purple';
+    even[i].style.backgroundColor = 'red';
+    even[i].style.color = 'black';
+}
