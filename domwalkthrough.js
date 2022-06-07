@@ -146,3 +146,29 @@
 // //lets us go into the dom to change elements
 // let input = document.querySelector('input');
 // input.value = "I just changed my underwear in this input box"
+
+// //creates the variable and lets us edit 
+// var submit = document.querySelector('input[type="submit"]');
+// submit.value = "Hello Button";
+
+// //sets a variable that we use to be able to edit the last item in the list or the last child
+// var lastItem =document.querySelector('.list-group-item:last-child');
+// lastItem.style.color = 'red';
+
+// //same as above but chooses the second item in that list
+// //arrays start at 0 but indexes start at 1?????
+// var otherItem = document.querySelector('.list-group-item:nth-child(2)');
+// otherItem.style.color = 'coral';
+// otherItem.textContent = 'tf???';
+
+
+///////////////////////////////////////////////
+//////////   querySelectorAll
+
+//makes variable that shows us all elements with title class
+var titles = document.querySelectorAll('.title');
+console.log(titles);
+
+//used the variable to change the string in the h2 header that used the title class
+titles[0].textContent = "hello";
+
